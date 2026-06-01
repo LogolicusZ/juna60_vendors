@@ -1,0 +1,98 @@
+/* Reset and base styles */
+body {
+    display: flex;
+    justify-content: center;
+    height: 100dvh;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", "Segoe UI", "Arial", sans-serif;
+    color: #222;
+    background-image: url("/assets/img/background3.jpg");
+    background-size: cover;
+    backdrop-filter: blur(8px);
+}
+.container {
+    height: fit-content;
+    width: 480px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.09);
+    margin: 40px 0;
+    padding: 40px 30px 32px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+h1 {
+    margin: 0 0 8px 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #111;
+}
+.bio {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 32px;
+    text-align: center;
+    line-height: 1.5;
+}
+.links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 12px;
+    padding: 16px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    transition: all 0.2s ease;
+    border: 1px solid #eaeaea;
+    position: relative;
+    text-align: center;
+}
+.link:hover,
+.link:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    border-color: #ddd;
+    background: #fafafa;
+}
+.link .icon {
+    margin-right: 10px;
+    font-size: 1.2em;
+    vertical-align: middle;
+}
+.footer {
+    margin-top: 36px;
+    font-size: 0.9rem;
+    color: #999;
+    text-align: center;
+}
+@media (max-width: 500px) {
+    .container {
+        margin: 20px auto;
+        padding: 30px 20px 25px 20px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    .bio {
+        font-size: 0.95rem;
+    }
+}
